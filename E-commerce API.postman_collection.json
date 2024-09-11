@@ -1,0 +1,384 @@
+{
+	"info": {
+		"_postman_id": "6defff81-da70-40da-8f21-bee5b7f49d13",
+		"name": "E-commerce API",
+		"description": "Dummy requests for the Coding Temple E-Commerce API mini-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38193404"
+	},
+	"item": [
+		{
+			"name": "CreateCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Thomas\", \"email\": \"thomas@test.com\", \"phone_number\":\"+1-555-555-5555\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadCustomer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/customer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCustomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Thomas\", \"email\": \"thomas@newemail.com\", \"phone_number\":\"+1-555-555-5555\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/customer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCustomer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/customer/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCustomerAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"customer\": 1, \"username\": \"TrainGuy556\", \"password\": \"CoolPassword\", \"is_premium\": \"False\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/customer_account",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer_account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadCustomerAccount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/customer_account/TrainGuy556",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer_account",
+						"TrainGuy556"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateCustomerAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"customer\": 1, \"username\": \"TrainGuy556\", \"password\": \"TightPassword\", \"is_premium\": \"False\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/customer_account/TrainGuy556",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer_account",
+						"TrainGuy556"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCustomerAccount",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/customer_account/TrainGuy556",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customer_account",
+						"TrainGuy556"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Cool Thing\", \"price\": 1599}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/product",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Cool Thing\", \"price\": 1599, \"description\": \"Comes with a free granola bar!\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/product/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/product/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"product",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"p_id\": 3, \"c_id\": 1, \"address\": \"111 No Way\", \"instructions\": \"Please leave the package on the doorstep.\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/order",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ReadOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/order/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"order",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TrackOrder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/order/track/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"order",
+						"track",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

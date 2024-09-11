@@ -9,6 +9,8 @@ db = SQLAlchemy(app)
 # reference to the namespaces
 import customer
 import customer_account
+import product
+import order
 
 with app.app_context():
     db.create_all()
